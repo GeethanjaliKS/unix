@@ -21,3 +21,15 @@ print array[r]
 }
 }
 }
+
+
+Electrical34
+Electrical34
+Mechanical67
+Electrical80
+Computer Science43
+Civil98
+Mechanical65
+Civil
+Computer Science64
+Computer Science43
