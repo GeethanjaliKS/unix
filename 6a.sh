@@ -1,11 +1,15 @@
-if [ $# -eq 0 ]
-then
-echo " no arguments "
-exit
-fi
+set -- `ls`
+j=0
 for i in $*
 do
-ls $*
-cat $*
-cp -f $* /home/mydir
+fl=`expr length $i`
+if [ $fl -ge 10 ]
+then
+echo $i
+j=`expr $j + 1`
+fi
 done
+if [ $j -eq 0 ]
+then
+echo "No file exists"
+fi
